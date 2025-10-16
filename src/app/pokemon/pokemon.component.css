@@ -1,0 +1,7 @@
+.pokemon-oculto {
+    filter: brightness(0);
+}
+img{
+    height: 200px;
+    -webkit-user-drag: none; /*Evitamos que el usuario haga trampa*/
+}

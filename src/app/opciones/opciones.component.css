@@ -1,0 +1,14 @@
+ul{
+    list-style-type: none; /*Para evitar las viñetas*/
+}
+
+/*Queremos darle la apariencia de botones a los li  */
+li{
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin-bottom: 10px; /*Para separar las opciones de respuesta*/
+    width: 250px;
+    text-align: center;
+}

@@ -1,0 +1,5 @@
+/* Centramos el contenedor de la aplicación */
+.app-container{
+    width: 30%;
+    margin:0 auto;
+}
