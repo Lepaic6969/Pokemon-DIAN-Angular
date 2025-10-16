@@ -8,6 +8,8 @@ import { Component,Input,Output,EventEmitter } from '@angular/core';
 export class ResultadoComponent {
   @Input()
   public message:string='Aquí va el mensaje del resultado del intento de adivinar';
+  @Input()
+  public aciertos:number=0;
   @Output()
   public resetear:EventEmitter<void>=new EventEmitter();
 

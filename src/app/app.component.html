@@ -2,5 +2,5 @@
     <h1>¿Quién es este pokemón?</h1>
     <pokemon [mostrarPokemon]="mostrarPokemon" [pokemonId]="pokemonId"/>
     <opciones [pokemons]="pokemons" (seleccion)="activarLogicaSeleccion($event)"/>
-    <resultado [message]="message" *ngIf="mostrarPokemon" (resetear)="activarLogicaResetear()"/>
+    <resultado [message]="message" [aciertos]="aciertos" *ngIf="mostrarPokemon" (resetear)="activarLogicaResetear()"/>
 </div>

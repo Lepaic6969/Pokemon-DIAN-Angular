@@ -9,8 +9,10 @@ import { Pokemon } from './pokemon.interface';
 })
 export class AppComponent {
 
-  public mostrarPokemon=false;
-  public message='';
+  public mostrarPokemon:boolean=false;
+  public message:string='';
+  public aciertos:number=0;
+
   constructor(private pokemonService:PokemonService){
     this.pokemonService.buscarPokemones();
   }
@@ -25,8 +27,10 @@ export class AppComponent {
     this.mostrarPokemon=true;
     if(id===this.pokemonId){
       this.message="🎉¡Felicidades, acertaste¡ Es "+this.pokemonService.pokemon.name+". 🎉";
+      this.aciertos++;
     }else{
       this.message=`Ops, era ${this.pokemonService.pokemon.name}. Has perdido. 🙉`;
+      this.aciertos=0;
     }
   }
   activarLogicaResetear(){
